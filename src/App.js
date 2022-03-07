@@ -1,12 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
- //test commit for vscode
+import AddNumberRoot from "./components/AddNumberRoot";
+import DisplayNumberRoot from './components/DisplayNumberRoot';
+
 function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
+	// const [count, setCount] = useState(0);
+
+	return (
+		<div className="App">
+			<h1>Add Number Root</h1>
+			<AddNumberRoot></AddNumberRoot>
+			<DisplayNumberRoot></DisplayNumberRoot>
+			{/* <p>You clicked {count} times</p>
+			<button onClick={() => setCount(count + 1)}>
+				Click me
+			</button> */}
+		</div>
+	);
 }
 
 export default App;
