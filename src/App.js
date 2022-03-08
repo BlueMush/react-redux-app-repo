@@ -4,13 +4,18 @@ import AddNumberRoot from "./components/AddNumberRoot";
 import DisplayNumberRoot from './components/DisplayNumberRoot';
 
 function App() {
-	// const [count, setCount] = useState(0);
+	const [count, setCount] = useState(0);
 
 	return (
 		<div className="App">
 			<h1>Add Number Root</h1>
-			<AddNumberRoot></AddNumberRoot>
-			<DisplayNumberRoot></DisplayNumberRoot>
+			<AddNumberRoot onClick={(number) => {
+				alert(number);
+				setCount(number);
+			}}></AddNumberRoot>
+			<DisplayNumberRoot
+				number={count}
+			></DisplayNumberRoot>
 			{/* <p>You clicked {count} times</p>
 			<button onClick={() => setCount(count + 1)}>
 				Click me
