@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import store from '../store';
 
 export default function AddNumber(props) {
 	const [reactStateNumber, setReactStateNumber] = useState(0);
@@ -12,11 +11,11 @@ export default function AddNumber(props) {
 				value="+"
 				onClick={() => {
 					// react
-					// props.onClick(number);
+					props.onClick(reactStateNumber);
 
 					// 2. React의 AddNumber.js의 state에 있는 number를
 					// 3. Redux의 store.js에 dispatch(publish)
-					store.dispatch({ type: 'INCREMENT', size: reactStateNumber });
+					// store.dispatch({ type: 'INCREMENT', size: reactStateNumber });
 				}}
 
 			></input>
