@@ -10,8 +10,7 @@ function App() {
 		<div className="App">
 			<h1>Add Number Root</h1>
 			<AddNumberRoot onClick={(number) => {
-				alert(number);
-				setCount(number);
+				setCount(number + count);
 			}}></AddNumberRoot>
 			<DisplayNumberRoot
 				number={count}
