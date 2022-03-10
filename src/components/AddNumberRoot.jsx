@@ -7,9 +7,10 @@ function AddNumberRoot(props) {
 		<div>
 			<h1>Add Number Root</h1>
 			<AddNumber
-				onClick={(number) => {
-					props.onClick(number);
-				}}
+			// react
+			// onClick={(number) => {
+			// 	props.onClick(number);
+			// }}
 			></AddNumber>
 		</div>
 	)
