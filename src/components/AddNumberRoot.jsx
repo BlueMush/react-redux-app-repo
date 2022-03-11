@@ -1,5 +1,5 @@
 import React from 'react'
-import AddNumber from '../../containers/addNumber/AddNumberContainer';
+import AddNumber from '../containers/AddNumberContainer';
 
 function AddNumberRoot(props) {
 	return (
